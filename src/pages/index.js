@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>홈 컴포넌트 내용</div>;
+  return <div className="text-center">안녕하세요, 강연주입니다.</div>;
 }

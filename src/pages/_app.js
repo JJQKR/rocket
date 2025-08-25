@@ -7,7 +7,7 @@ export default function RocketYunju({ Component, pageProps }) {
   return (
     <div>
       <header>
-        <nav className="flex flex-col">
+        <nav className="flex flex-col text-center">
           <Link href="/">홈으로 이동</Link>
           <Link href="/chapter_1">제 1장 보기</Link>
         </nav>
