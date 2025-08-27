@@ -123,8 +123,8 @@ const SajuTable = () => {
             </div>
             {/* 지지행 */}
             <div className="basic-row grid grid-cols-5">
-              <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center leading-none border-r-[1.05px] border-b-gray-light border-r-black-dark p-1">
-                <p className="font-bold text-center pb-1 mb-1">天干</p>
+              <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center leading-none border-r-[1.05px] border-b-black-dark border-r-black-dark p-1">
+                <p className="font-bold text-center pb-1 mb-1">地支</p>
                 <p className="text-sm text-center font-bold">(지지)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium p-2 flex items-center justify-center">
