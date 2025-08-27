@@ -21,10 +21,10 @@ const SajuTable = () => {
               />
             </div>
             <div className="text-center m-6">
-              <p className="text-[clamp(12px,4vw,16px)] text-[#424242]">
+              <p className="text-[clamp(10px,3vw,16px)] text-[#424242]">
                 김로켓님의 사주
               </p>
-              <p className="text-[clamp(16px,3vw,20px)] font-bold text-[#424242]">
+              <p className="text-[clamp(14px,4vw,20px)] font-bold text-[#424242]">
                 1980년 8월 27일 08:10
               </p>
             </div>
@@ -38,7 +38,7 @@ const SajuTable = () => {
           </div>
 
           {/* 사주팔자표 내용 */}
-          <div className="w-[90%] mx-auto my-5">
+          <div className="w-[90%] mx-auto my-5 max-w-md">
             {/* 헤더 행 */}
             <div className="header-row grid grid-cols-5 text-3xl">
               <div className="border-b-[1.05px] border-r-[1.05px] border-b-black-dark border-r-black-dark p-2"></div>
@@ -191,8 +191,18 @@ const SajuTable = () => {
             {/* 십이운성행 */}
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
-                <p className="font-normal text-xl text-center mb-1">十二運星</p>
-                <p className="font-bold text-2xs text-center">(십이운성)</p>
+                <p
+                  className="font-normal text-[clamp(8px,8vw,18px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "4em" }}
+                >
+                  十二運星
+                </p>
+                <p
+                  className="font-bold text-[clamp(6px,4vw,8px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "6em" }}
+                >
+                  (십이운성)
+                </p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
@@ -214,8 +224,18 @@ const SajuTable = () => {
             {/* 십이신살행 */}
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
-                <p className="font-normal text-xl text-center mb-1">十二神殺</p>
-                <p className="font-bold text-2xs text-center">(십이신살)</p>
+                <p
+                  className="font-normal text-[clamp(8px,8vw,18px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "4em" }}
+                >
+                  十二神殺
+                </p>
+                <p
+                  className="font-bold text-[clamp(6px,4vw,8px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "6em" }}
+                >
+                  (십이신살)
+                </p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
@@ -252,11 +272,26 @@ const SajuTable = () => {
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">天乙</p>
-                <p className="font-bold text-xs text-center">(천을귀인)</p>
+                <p
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "6em" }}
+                >
+                  (천을귀인)
+                </p>
                 <p className="font-normal text-2xl text-center mb-1">天乙</p>
-                <p className="font-bold text-xs text-center">(천을귀인)</p>
+                <p
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "6em" }}
+                >
+                  (천을귀인)
+                </p>
                 <p className="font-normal text-2xl text-center mb-1">天乙</p>
-                <p className="font-bold text-xs text-center">(천을귀인)</p>
+                <p
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
+                  style={{ wordBreak: "break-all", width: "6em" }}
+                >
+                  (천을귀인)
+                </p>
               </div>
             </div>
           </div>
