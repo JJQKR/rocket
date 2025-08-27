@@ -11,6 +11,7 @@ module.exports = {
       // md: "768px", // 기본값
     },
     fontSize: {
+      "2xs": "6px",
       xs: "10px",
       sm: "12px",
       base: "14px",
@@ -19,6 +20,20 @@ module.exports = {
       "2xl": "20px",
       "3xl": "24px",
       "4xl": "30px",
+    },
+    extend: {
+      colors: {
+        black: {
+          medium: "#2F2F2F",
+        },
+        gray: {
+          medium: "#8A8A8A",
+          light: "#9B9B9B",
+        },
+        red: {
+          medium: "#C23030",
+        },
+      },
     },
   },
   plugins: [],

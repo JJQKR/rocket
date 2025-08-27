@@ -1,5 +1,6 @@
 import React from "react";
 import SajuTable from "./SajuTable";
+import SajuLayout from "./SajuLayout";
 // 추후 챕터 추가에 따라 수정, 확장하기
 
 const ContentViewer = () => {
@@ -51,6 +52,7 @@ const ContentViewer = () => {
           </div>
         </div>
         <div>
+          <SajuLayout></SajuLayout>
           <SajuTable />
         </div>
       </div>
