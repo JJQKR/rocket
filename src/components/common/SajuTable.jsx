@@ -5,10 +5,10 @@ const SajuTable = () => {
     <div className="max-w-md mx-auto bg-[#F5F3EC] mb-10">
       {/* 상단 연장선 */}
       <div className="relative">
-        <div className="absolute top-[2.4px] left-[-1px] border-r-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
-        <div className="absolute top-[2.4px] right-[-0.9px] border-l-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
-        <div className="absolute top-[1px] left-[-1px] border-b-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
-        <div className="absolute top-[2.4px] right-[-0.9px] border-b-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
+        <div className="absolute top-[2.4px] left-[-0.1px] border-r-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
+        <div className="absolute top-[2.4px] right-[-0.1px] border-l-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
+        <div className="absolute top-[0.2px] left-[-0.1px] border-b-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
+        <div className="absolute top-[0.2px] right-[-0.1px] border-b-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
       </div>
       <div className="border-[3px] border-[#1B2F49] p-4 ">
         <div className="border-[#2B557E] border-[1px]">
@@ -20,7 +20,7 @@ const SajuTable = () => {
                 className="w-[56px] h-[38px]"
               />
             </div>
-            <div className="text-center">
+            <div className="text-center m-6">
               <p className="text-[clamp(12px,4vw,16px)] text-[#424242]">
                 김로켓님의 사주
               </p>
@@ -40,7 +40,7 @@ const SajuTable = () => {
           {/* 사주팔자표 내용 */}
           <div className="w-[90%] mx-auto my-5">
             {/* 헤더 행 */}
-            <div className="header-row grid grid-cols-5">
+            <div className="header-row grid grid-cols-5 text-3xl">
               <div className="border-b-[1.05px] border-r-[1.05px] border-b-black-dark border-r-black-dark p-2"></div>
               <div className="border-b-[1.05px] border-r-[0.49px] border-b-black-dark border-r-gray-medium p-2 text-center font-medium">
                 時
@@ -73,7 +73,7 @@ const SajuTable = () => {
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
@@ -111,7 +111,7 @@ const SajuTable = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-black-dark p-2 flex items-center justify-center">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark p-2 flex items-center justify-center">
                 <div className="color-container p-2 leading-none rounded-xl flex flex-col text-white justify-center items-center w-[55.45px] h-[55.45px] bg-black-medium">
                   <p className="text-center font-normal text-3xs mb-1">임</p>
                   <p className="text-center font-normal text-3xl ">壬</p>
@@ -154,7 +154,7 @@ const SajuTable = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-black-dark p-2 flex items-center justify-center">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-black-dark border-r-black-dark p-2 flex items-center justify-center">
                 <div className="color-container p-2 leading-none rounded-xl flex flex-col border-black-dark border-[0.98px] justify-center items-center w-[55.45px] h-[55.45px]">
                   <p className="text-center font-normal text-3xs mb-1">임</p>
                   <p className="text-center font-normal text-3xl ">壬</p>
@@ -165,7 +165,7 @@ const SajuTable = () => {
               </div>
             </div>
             {/* 지지행끝 */}
-            {/* 십성시작 */}
+            {/* 십성행 */}
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
                 <p className="font-normal text-xl text-center mb-1">十星</p>
@@ -183,7 +183,7 @@ const SajuTable = () => {
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
@@ -206,12 +206,12 @@ const SajuTable = () => {
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
             </div>
-            {/* 십이인살행 */}
+            {/* 십이신살행 */}
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
                 <p className="font-normal text-xl text-center mb-1">十二神殺</p>
@@ -229,7 +229,7 @@ const SajuTable = () => {
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">傷官</p>
                 <p className="font-bold text-xs text-center">(상관)</p>
               </div>
@@ -250,7 +250,7 @@ const SajuTable = () => {
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-bold text-xs text-center">(없음)</p>
               </div>
-              <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
+              <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
                 <p className="font-normal text-2xl text-center mb-1">天乙</p>
                 <p className="font-bold text-xs text-center">(천을귀인)</p>
                 <p className="font-normal text-2xl text-center mb-1">天乙</p>
@@ -265,8 +265,10 @@ const SajuTable = () => {
 
       {/* 하단 연장선 */}
       <div className="relative">
-        <div className="absolute bottom-[2.4px] left-[-1px] border-r-[1px] w-[20px] h-[40px] border-[#2B557E]"></div>
-        <div className="absolute bottom-[2.4px] right-[-0.9px] border-l-[1px] w-[20px] h-[40px] border-[#2B557E]"></div>
+        <div className="absolute bottom-[19px] left-[-0.1px] border-b-[1px] w-[20px] h-[50px] border-[#2B557E]"></div>
+        <div className="absolute bottom-[19px] right-[-0.1px] border-b-[1px] w-[20px] h-[20px] border-[#2B557E]"></div>
+        <div className="absolute bottom-[0.2px] left-[-0.1px] border-r-[1px] w-[20px] h-[40px] border-[#2B557E]"></div>
+        <div className="absolute bottom-[0.2px] right-[-0.1px] border-l-[1px] w-[20px] h-[40px] border-[#2B557E]"></div>
       </div>
     </div>
   );
