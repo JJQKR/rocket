@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "../styles/globals.css";
+import Chapter_1 from "./chapter_1";
 
 export default function RocketYunju({ Component, pageProps }) {
   console.log("현재 페이지:", Component.name); // 디버깅용
@@ -15,6 +16,7 @@ export default function RocketYunju({ Component, pageProps }) {
       <main className="font-semibold">
         <Component {...pageProps} />
       </main>
+      <Chapter_1 />
     </div>
   );
 }
