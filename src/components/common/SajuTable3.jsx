@@ -1,7 +1,7 @@
-// clamp에 rem 적용 후, 상하 패딩 적용 후
+// clamp에 rem 적용 후, 상하 패딩 수정 전
 import React from "react";
 
-const SajuTable = () => {
+const SajuTable3 = () => {
   return (
     <div className="max-w-md mx-auto bg-[#F5F3EC] mb-10">
       {/* 상단 연장선 */}
@@ -85,20 +85,11 @@ const SajuTable = () => {
                 <p className="font-bold text-center pb-1 mb-1">天干</p>
                 <p className="text-sm text-center font-bold">(천간)</p>
               </div>
-              {/* <div
+              <div
                 className="border-b-[1.05px] bg-pink-400 border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
                   padding: "clamp(6px,0.5rem,12px)",
                   height: "clamp(60px,3.75rem,80px)",
-                }}
-              > */}
-              <div
-                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
-                style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -121,12 +112,10 @@ const SajuTable = () => {
                 </div>
               </div>
               <div
-                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -149,12 +138,10 @@ const SajuTable = () => {
                 </div>
               </div>
               <div
-                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -178,12 +165,10 @@ const SajuTable = () => {
               </div>
 
               <div
-                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -212,14 +197,11 @@ const SajuTable = () => {
                 <p className="font-bold text-center pb-1 mb-1">地支</p>
                 <p className="text-sm text-center font-bold">(지지)</p>
               </div>
-
               <div
-                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -241,14 +223,11 @@ const SajuTable = () => {
                   </p>
                 </div>
               </div>
-
               <div
-                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -270,14 +249,11 @@ const SajuTable = () => {
                   </p>
                 </div>
               </div>
-
               <div
-                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -299,14 +275,11 @@ const SajuTable = () => {
                   </p>
                 </div>
               </div>
-
               <div
-                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark
-             flex items-center justify-center box-border
-             px-[clamp(6px,0.5rem,12px)] py-[clamp(8px,0.625rem,14px)]"
+                className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-black-dark border-r-black-dark flex items-center justify-center"
                 style={{
-                  height: "auto",
-                  minHeight: "clamp(60px,3.75rem,80px)",
+                  padding: "clamp(6px,0.5rem,12px)",
+                  height: "clamp(60px,3.75rem,80px)",
                 }}
               >
                 <div
@@ -486,4 +459,4 @@ const SajuTable = () => {
   );
 };
 
-export default SajuTable;
+export default SajuTable3;

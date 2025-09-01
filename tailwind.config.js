@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     screens: {
       // xs: { max: "320px" }, // 가장 작은 모바일
-      sm: { max: "375px" }, // 일반 모바일
+      // sm: { max: "375px" }, // 일반 모바일
       // md: "768px", // 기본값
     },
     fontSize: {
