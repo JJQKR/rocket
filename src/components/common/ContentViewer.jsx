@@ -1,6 +1,7 @@
 import React from "react";
-import SajuTable from "./SajuTableTmp";
+
 import SajuLayout from "./SajuLayout";
+import SajuTable from "./SajuTable";
 // 추후 챕터 추가에 따라 수정, 확장하기
 
 const ContentViewer = () => {
