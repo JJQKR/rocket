@@ -1,6 +1,6 @@
 import React from "react";
 
-const SajuTable = () => {
+const SajuTableTmp = () => {
   return (
     <div className="max-w-md mx-auto bg-[#F5F3EC] mb-10">
       {/* 상단 연장선 */}
@@ -21,8 +21,10 @@ const SajuTable = () => {
               />
             </div>
             <div className="text-center m-6">
-              <p className="text-[1rem] text-[#424242]">김로켓님의 사주</p>
-              <p className="text-[1.25rem] font-bold text-[#424242]">
+              <p className="text-[clamp(10px,3vw,16px)] text-[#424242]">
+                김로켓님의 사주
+              </p>
+              <p className="text-[clamp(14px,4vw,20px)] font-bold text-[#424242]">
                 1980년 8월 27일 08:10
               </p>
             </div>
@@ -38,7 +40,7 @@ const SajuTable = () => {
           {/* 사주팔자표 내용 */}
           <div className="w-[90%] mx-auto my-5 max-w-md">
             {/* 헤더 행 */}
-            <div className="header-row grid grid-cols-5 text-[1.5rem]">
+            <div className="header-row grid grid-cols-5 text-3xl">
               <div className="border-b-[1.05px] border-r-[1.05px] border-b-black-dark border-r-black-dark p-2"></div>
               <div className="border-b-[1.05px] border-r-[0.49px] border-b-black-dark border-r-gray-medium p-2 text-center font-medium">
                 時
@@ -54,67 +56,56 @@ const SajuTable = () => {
               </div>
             </div>
             {/* 첫 번째 행 */}
-            <div
-              className="basic-row grid grid-cols-5"
-              style={{ minHeight: "4rem" }}
-            >
+            <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
-                <p className="font-normal text-[1.125rem] text-center mb-1">
-                  十星
-                </p>
-                <p className="font-bold text-[0.5rem] text-center">(십성)</p>
+                <p className="font-normal text-xl text-center mb-1">十星</p>
+                <p className="font-bold text-2xs text-center">(십성)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
             </div>
             {/* 천간행 */}
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center leading-none border-r-[1.05px] border-b-gray-light border-r-black-dark p-1">
                 <p className="font-bold text-center pb-1 mb-1">天干</p>
-                <p className="text-[0.875rem] text-center font-bold">(천간)</p>
+                <p className="text-sm text-center font-bold">(천간)</p>
               </div>
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-black-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)", // width와 동일하게
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -122,71 +113,87 @@ const SajuTable = () => {
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-red-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)", // width와 동일하게
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
               </div>
+              {/* <div className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium p-2 flex items-center justify-center">
+                <div className="color-container p-2 leading-none rounded-xl flex flex-col text-white justify-center items-center w-[55.45px] h-[55.45px] bg-red-medium">
+                  <p className="text-center font-normal text-3xs mb-1">임</p>
+                  <p className="text-center font-normal text-3xl ">壬</p>
+                  <p className="text-center font-normal text-3xs mt-1">
+                    (십성)
+                  </p>
+                </div>
+              </div> */}
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-gray-light border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-black-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)", // width와 동일하게
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
               </div>
+
               <div
                 className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-gray-light border-r-black-dark flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-black-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)", // width와 동일하게
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -196,28 +203,30 @@ const SajuTable = () => {
             <div className="basic-row grid grid-cols-5">
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center leading-none border-r-[1.05px] border-b-black-dark border-r-black-dark p-1">
                 <p className="font-bold text-center pb-1 mb-1">地支</p>
-                <p className="text-[0.875rem] text-center font-bold">(지지)</p>
+                <p className="text-sm text-center font-bold">(지지)</p>
               </div>
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-turquoise"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)",
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -225,23 +234,25 @@ const SajuTable = () => {
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-red-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)",
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -249,23 +260,25 @@ const SajuTable = () => {
               <div
                 className="border-b-[1.05px] bg-white border-r-[0.49px] border-b-black-dark border-r-gray-medium flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container leading-none rounded-xl flex flex-col text-white justify-center items-center bg-black-medium"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)",
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -273,23 +286,25 @@ const SajuTable = () => {
               <div
                 className="border-b-[1.05px] bg-white border-r-[1.05px] border-b-black-dark border-r-black-dark flex items-center justify-center"
                 style={{
-                  padding: "0.75rem",
-                  height: "5rem",
+                  padding: "clamp(6px,2vw,12px)",
+                  height: "clamp(60px,15vw,80px)",
                 }}
               >
                 <div
                   className="color-container border-black-dark border-[0.98px] leading-none rounded-xl flex flex-col text-black-dark justify-center items-center bg-white"
                   style={{
-                    width: "3.5rem",
-                    height: "3.5rem",
-                    padding: "0.5rem",
+                    width: "clamp(40px,11vw,55px)",
+                    height: "clamp(40px,11vw,55px)",
+                    padding: "clamp(4px,1vw,8px)",
                   }}
                 >
-                  <p className="text-center font-normal text-[0.4375rem] mb-0.5">
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mb-0.5">
                     임
                   </p>
-                  <p className="text-center font-normal text-[1.5rem]">壬</p>
-                  <p className="text-center font-normal text-[0.4375rem] mt-0.5">
+                  <p className="text-center font-normal text-[clamp(18px,5vw,24px)]">
+                    壬
+                  </p>
+                  <p className="text-center font-normal text-[clamp(5px,1.5vw,7px)] mt-0.5">
                     (십성)
                   </p>
                 </div>
@@ -299,172 +314,141 @@ const SajuTable = () => {
             {/* 십성행 */}
             <div
               className="basic-row grid grid-cols-5"
-              style={{ minHeight: "4rem" }}
+              style={{ minHeight: "clamp(50px,12vw,65px)" }}
             >
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
-                <p className="font-normal text-[1.125rem] text-center mb-1">
-                  十星
-                </p>
-                <p className="font-bold text-[0.5rem] text-center">(십성)</p>
+                <p className="font-normal text-xl text-center mb-1">十星</p>
+                <p className="font-bold text-2xs text-center">(십성)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
             </div>
             {/* 십이운성행 */}
             <div
               className="basic-row grid grid-cols-5"
-              style={{ minHeight: "4rem" }}
+              style={{ minHeight: "clamp(50px,12vw,65px)" }}
             >
+              {" "}
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
                 <p
-                  className="font-normal text-[1.125rem] text-center mb-1"
+                  className="font-normal text-[clamp(8px,4vw,18px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "4em" }}
                 >
                   十二運星
                 </p>
                 <p
-                  className="font-bold text-[0.5rem] text-center mb-1"
+                  className="font-bold text-[clamp(6px,4vw,8px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "6em" }}
                 >
                   (십이운성)
                 </p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
             </div>
             {/* 십이신살행 */}
             <div
               className="basic-row grid grid-cols-5"
-              style={{ minHeight: "4rem" }}
+              style={{ minHeight: "clamp(50px,12vw,65px)" }}
             >
+              {" "}
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
                 <p
-                  className="font-normal text-[1.125rem] text-center mb-1"
+                  className="font-normal text-[clamp(8px,4vw,18px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "4em" }}
                 >
                   十二神殺
                 </p>
                 <p
-                  className="font-bold text-[0.5rem] text-center mb-1"
+                  className="font-bold text-[clamp(6px,4vw,8px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "6em" }}
                 >
                   (십이신살)
                 </p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  傷官
-                </p>
-                <p className="font-bold text-[0.625rem] text-center">(상관)</p>
+                <p className="font-normal text-2xl text-center mb-1">傷官</p>
+                <p className="font-bold text-xs text-center">(상관)</p>
               </div>
             </div>
 
             {/* 귀인행 */}
             <div
               className="basic-row grid grid-cols-5"
-              style={{ minHeight: "4rem" }}
+              style={{ minHeight: "clamp(50px,12vw,65px)" }}
             >
+              {" "}
               <div className="border-b-[1.05px] text-center flex flex-col items-center justify-center border-r-[1.05px] border-b-black-dark border-r-black-dark p-1 leading-none">
-                <p className="font-normal text-[1.125rem] text-center mb-1">
-                  貴人
-                </p>
-                <p className="font-bold text-[0.5rem] text-center">(귀인)</p>
+                <p className="font-normal text-xl text-center mb-1">貴人</p>
+                <p className="font-bold text-2xs text-center">(귀인)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-bold text-[0.625rem] text-center">(없음)</p>
+                <p className="font-bold text-xs text-center">(없음)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-bold text-[0.625rem] text-center">(없음)</p>
+                <p className="font-bold text-xs text-center">(없음)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[0.49px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-bold text-[0.625rem] text-center">(없음)</p>
+                <p className="font-bold text-xs text-center">(없음)</p>
               </div>
               <div className="border-b-[1.05px] bg-white border-r-[1.05px] text-center flex flex-col items-center justify-center border-b-black-dark border-r-black-dark p-1 leading-tight">
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  天乙
-                </p>
+                <p className="font-normal text-2xl text-center mb-1">天乙</p>
                 <p
-                  className="font-bold text-[0.625rem] text-center mb-1"
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "6em" }}
                 >
                   (천을귀인)
                 </p>
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  天乙
-                </p>
+                <p className="font-normal text-2xl text-center mb-1">天乙</p>
                 <p
-                  className="font-bold text-[0.625rem] text-center mb-1"
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "6em" }}
                 >
                   (천을귀인)
                 </p>
-                <p className="font-normal text-[1.25rem] text-center mb-1">
-                  天乙
-                </p>
+                <p className="font-normal text-2xl text-center mb-1">天乙</p>
                 <p
-                  className="font-bold text-[0.625rem] text-center mb-1"
+                  className="font-bold text-[clamp(6px,4vw,10px)] text-center mb-1"
                   style={{ wordBreak: "break-all", width: "6em" }}
                 >
                   (천을귀인)
@@ -486,4 +470,4 @@ const SajuTable = () => {
   );
 };
 
-export default SajuTable;
+export default SajuTableTmp;

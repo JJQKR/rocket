@@ -1,5 +1,5 @@
 import React from "react";
-import SajuTable from "./SajuTable";
+import SajuTable from "./SajuTableTmp";
 import SajuLayout from "./SajuLayout";
 // 추후 챕터 추가에 따라 수정, 확장하기
 
